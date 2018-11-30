@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Greg's List | Classified Ads</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Greg's List, an old-school classified ads site" >
+    <meta name="description" content="Greg's List, an old-school classified ads site">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!-- fonts  -->
@@ -12,22 +13,50 @@
 
     <!-- reset -->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
-    
+
     <!-- styles -->
     <link rel="stylesheet" type="text/css" href="style.css">
-    
+
 </head>
+
 <body>
-    <div class="wrapper">
     <nav role="navigation" id="navigation">
         <h1>Greg's List</h1>
         <ul class="menu">
-            <li class="menu-item right">Post</li>
-            <li class="menu-item right">Account</li>
+            <li class="menu-item right"><a class="purp" href="http://" target="_blank" rel="noopener noreferrer">Post</a></li>
+            <li class="menu-item right"><a class="purp" href="http://" target="_blank" rel="noopener noreferrer">Account</a></li>
+            
         </ul>
     </nav>
 
-    </div>
-    
+    <main>
+        <form action="/search.com">
+            <label for="search-jobs" class="search-jobs">Search Jobs</label>
+            <input type="search" name="search" placeholder="Search software jobs">
+            <input type="image" id="search" alt="Search" class="search-image" src="images/magnifying-glass.png">
+        </form>
+
+        <div class="clearfix">
+            <div class="small box">
+                <p>< prev></p>
+            </div>
+            <div class="large box">
+                <p>1 to 100 of 179</p>
+            </div>
+            <div class="small box">
+                <p>next ></p>
+            </div>
+        </div>
+
+        <section class="results">
+            <p>June 22  <span class="blue pad"><a href="http://" target="_blank" rel="noopener noreferrer">Technical Project Manager</a></span>  Midtown East</p>
+            <p>June 21  <span class="blue pad"><a href="http://" target="_blank" rel="noopener noreferrer">Front End Developer</a></span>  SoHo</p>
+            <p>June 20  <span class="blue pad"><a href="http://" target="_blank" rel="noopener noreferrer">Senior Python Developer / Cofounder</a></span>  Flatiron</p>
+        </section>
+
+    </main>
+
+
 </body>
+
 </html>

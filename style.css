@@ -11,14 +11,6 @@ html {
     font-size: 100%;
 
 }
-  
-a {
-    text-decoration: none;
-}
-
-.wrapper {
-    display: block;
-}
 
 h1 {
     display: inline-block;
@@ -33,34 +25,109 @@ nav {
     background: rgb(190, 190, 190);
     font-size: 1.5em;
     width: 100%;
-    height: 60px;
+    height: 55px;
     padding-right: 20px;
+    top: 0;
+    min-width: 590px;
 }
 
 ul {
     text-align: right;
     position: relative;
-    top: -68px;
+    top: -70px;
     left: 14px;
 }
 
 li {
     display: inline;
     padding-right: 10px;
+    letter-spacing: -1px;
+}
+
+main {
+    display: block;
+    margin: 5em;
+    min-width: 600px;
+}
+
+.search-jobs {
+    display: block;
+    margin-bottom: 5px;
 }
 
 
-/*
-.menu-item {
-    position: relative;
-    display: inherit;
-    word-spacing: 20px;
-    top: 12px;
-    left: 690px;
-    padding-right: 18px;
-    text-align: right;
+input[type=search] {
+    display: inline-block;
+    width: 475px;
+    height: 30px;
+    border: 2px solid lightgray;
+    padding-left: 10px;
+    float: left;
+    margin-right: 4px;
+    border-radius: 3%;
+    font-weight: bold;
 }
 
-.menu-item::after {
-    content: "  ";
+.search-image {
+    display: inline;
+    width: 30px;
+    border: 2px solid lightgrey;
+    left: 481px;
+    bottom: 181px;
+    border-radius: 15%;
+}
+
+.box {
+    float: left;
+    height: 40px;
+    margin-top: 35px;
+    margin-bottom: 32px;
+    border: 2px solid lightgrey;
+    text-align: center;
+}
+
+.small {
+    width: 80px;
+}
+
+.large {
+    width:175px;
+    border-left: none;
+    border-right: none;
+}
+
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.clearfix > div > p {
+    margin-top: 8px;
+}
+
+.blue.pad {
+    color: blue;
+    font-weight: bold;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+a.purp:link, a.purp:visited {
+    text-decoration: none;
+    color: purple;
+}
+
+a.purp:hover, a.purp:active {
+    text-decoration: underline;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    text-decoration: underline;
+    color: blue;
 }
