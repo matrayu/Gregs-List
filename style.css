@@ -31,14 +31,24 @@ nav {
     min-width: 590px;
 }
 
-ul {
-    text-align: right;
+.results>ul>li {
     position: relative;
-    top: -70px;
-    left: 14px;
+    top: 0;
+    left: 0;
+    list-style-type: none;
+    padding: 0 0 20px;
+    left: -40px;
 }
 
-li {
+
+.menu {
+    width: 100%;
+    text-align: right;
+    position: absolute;
+    top: -7px;
+}
+
+.menu>li {
     display: inline;
     padding-right: 10px;
     letter-spacing: -1px;
@@ -65,7 +75,7 @@ input[type=search] {
     float: left;
     margin-right: 4px;
     border-radius: 3%;
-    font-weight: bold;
+    color: rgb(156, 156, 156);
 }
 
 .search-image {
@@ -110,8 +120,8 @@ input[type=search] {
 .blue.pad {
     color: blue;
     font-weight: bold;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 a.purp:link, a.purp:visited {
@@ -125,6 +135,7 @@ a.purp:hover, a.purp:active {
 
 a:link, a:visited {
     text-decoration: none;
+    color: inherit;
 }
 
 a:hover, a:active {
